@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Form2() {
   const [formData, setFormData] = React.useState({
@@ -72,10 +73,13 @@ function Form2() {
               />
               <label htmlFor="doJoin" className="ps-2">
                 I want to join the newsletter
-              </label>{" "}
+              </label>
               <br /> <br />
               <button className="btn btn-success">Sign up</button>
             </form>
+           <div className="pt-2">
+           <Link to="/forms">Go back</Link>
+           </div>
           </div>
         </div>
       </div>

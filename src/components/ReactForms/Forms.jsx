@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Forms() {
   const [formData, setFormData] = React.useState({
@@ -19,7 +20,7 @@ function Forms() {
         ...prevState,
         [name]: type === "checkbox" ? checked : value,
       };
-    }); 
+    });
   }
 
   function onHandleSubmit(event) {
@@ -131,6 +132,9 @@ function Forms() {
               </fieldset>
               <button className="btn btn-success">Submit</button>
             </form>
+            <div className="pt-2">
+            <Link to="/form2">Another Form</Link>
+            </div>
           </div>
         </div>
         <small>[ Topic: React Form]</small>

@@ -11,6 +11,7 @@ import Boxes from "./components/BoxApp/Boxes";
 import Jokes from "./components/JokeApp/Jokes";
 import Forms from "./components/ReactForms/Forms";
 import Form2 from "./components/ReactForms/Form2";
+import APIhandle from "./components/API/APIhandle";
 import NoMatch from "./components/NoMatch";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="boolean" element={<BooleanState />} />
         <Route path="counter" element={<CounterApp />} />
         <Route path="lorem" element={<LoremImgGenerator />} />
+        <Route path="api" element={<APIhandle />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </div>
