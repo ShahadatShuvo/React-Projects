@@ -24,6 +24,7 @@ function LoremImgGenerator() {
           </button>
         </div>
       </div>
+      <small>[ Topic: React props ]</small>
     </div>
   );
 }

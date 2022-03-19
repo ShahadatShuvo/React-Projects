@@ -29,6 +29,7 @@ function Boxes() {
       <h1 className="text-center">Boxes App</h1> <hr />
       <div className="container">
         <div className="row">{displayBoxes}</div>
+        <small>[ Topic:React state and props ]</small>
       </div>
     </div>
   );

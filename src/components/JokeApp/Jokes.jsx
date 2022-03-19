@@ -30,6 +30,8 @@ function Jokes() {
         <h1 className="text-center">Jokes App</h1>
         <hr />
         {showdata}
+
+        <small>[ Topic: Conditional Rendering ]</small>
       </div>
     </div>
   );

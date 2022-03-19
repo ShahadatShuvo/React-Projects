@@ -12,7 +12,8 @@ function CounterApp() {
   return (
     <div className="counter--wrapper">
       <div className="container pt-3">
-      <h1 className="text-center text-light">Learn UseState App-3</h1><hr />
+        <h1 className="text-center text-light">Learn UseState App-3</h1>
+        <hr />
         <div className="row pt-5">
           <div className="col-8 col-md-4 mx-auto">
             <div className="left-counter" onClick={handleDecreament}>
@@ -30,6 +31,7 @@ function CounterApp() {
             </div>
           </div>
         </div>
+        <small className="text-light">[ Topic: React useState ]</small>
       </div>
     </div>
   );

@@ -27,7 +27,15 @@ function MemeParent() {
         setFormData={setFormData}
         btnClick={handleClick}
       />
-      <Meme randomMemeImg={randomMemeImg} formData={formData}/>
+      <Meme randomMemeImg={randomMemeImg} formData={formData} />
+      <div className="container">
+        <small>
+          [ Meme Generator Topic: API &#8827; useEffect, React form, Conditional
+          Rendering, State handling, State lifting, props, useState, styling ]
+        </small>
+        <br />
+        <small>[ Navbar Topic: React Router ]</small>
+      </div>
     </div>
   );
 }
