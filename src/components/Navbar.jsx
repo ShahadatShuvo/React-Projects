@@ -30,7 +30,16 @@ function Navbar() {
               <Link
                 className="nav-link active text-light fw-bold"
                 aria-current="page"
-                to="forms"
+                to="api"
+              >
+                API
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link active text-light fw-bold"
+                aria-current="page"
+                to="forms "
               >
                 Form
               </Link>
