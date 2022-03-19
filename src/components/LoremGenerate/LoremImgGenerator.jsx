@@ -9,7 +9,7 @@ function LoremImgGenerator() {
       <h1 className="text-center">Random Image Generator</h1>
       <hr />
       <div className="row">
-        <div className="col-8 mx-auto">
+        <div className="col-11 col-md-8 mx-auto">
           <img
             src="https://picsum.photos/640/360"
             className="img-fluid"
