@@ -18,7 +18,7 @@ function LoremImgGenerator() {
         </div>
       </div>
       <div className="row mt-3">
-        <div className="col-2 mx-auto">
+        <div className="col-4 col-md-2 mx-auto">
           <button className="btn btn-success" onClick={handleClick}>
             Click Me
           </button>
