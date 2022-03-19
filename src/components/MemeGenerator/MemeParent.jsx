@@ -1,11 +1,10 @@
 import React from "react";
 
-import MemesData from "./MemesData";
 import Form from "./Form";
 import Meme from "./Meme";
 
 function MemeParent() {
-  const allMemes = MemesData.data.memes;
+  const [allMemes, setAllMemes] = React.useState([]);
 
   const [randomMemeImg, setRandomMemeImg] = React.useState("");
 
@@ -13,7 +12,12 @@ function MemeParent() {
     topText: "",
     bottomText: "",
   });
-  console.log(formData);
+
+  React.useEffect(() => {
+    fetch("https://api.imgflip.com/get_memes")
+      .then((res) => res.json())
+      .then((data) => setAllMemes(data.data.memes));
+  }, []);
 
   function handleClick() {
     const randomValue = Math.floor(Math.random() * allMemes.length);
