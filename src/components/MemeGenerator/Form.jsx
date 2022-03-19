@@ -22,7 +22,7 @@ function Form(props) {
         <div className="col-12 mx-auto">
           <form onSubmit={onHandleSubmit}>
             <div className="row justify-content-center">
-              <div className="col-4">
+              <div className="col-6 col-md-4">
                 <input
                   type="text"
                   name="topText"
@@ -32,7 +32,7 @@ function Form(props) {
                   onChange={onHandleChange}
                 />
               </div>
-              <div className="col-4">
+              <div className="col-6 col-md-4">
                 <input
                   type="text"
                   name="bottomText"
@@ -44,7 +44,7 @@ function Form(props) {
               </div>
             </div>
             <div className="row">
-              <div className="col-4 mx-auto">
+              <div className="col-10 col-md-4 mx-auto">
                 <button className="btn btn-primary mt-3 navbarColor meme--btn">
                   Get a new meme image
                 </button>
